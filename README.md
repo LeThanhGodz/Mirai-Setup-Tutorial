@@ -30,7 +30,7 @@ source ~/.bash_profile
 rm -rf go1.10.3.linux-amd64.tar.gz
 ```
 
-Tiếp theo chúng ta sẽ tải Cross Compile nhé :>
+Tiếp theo chúng ta sẽ tải Cross Compiler nhé :>
 
 ```bash
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-i586.tar.bz2
@@ -44,7 +44,31 @@ wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv4l.ta
 wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv5l.tar.bz2
 wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv6l.tar.bz2
 wget https://landley.net/aboriginal/downloads/old/binaries/1.2.6/cross-compiler-armv7l.tar.bz2
+```
+
+Giải nén Cross Compiler:
+```bash
+tar -jxf cross-compiler-i586.tar.bz2
+tar -jxf cross-compiler-m68k.tar.bz2
+tar -jxf cross-compiler-mips.tar.bz2
+tar -jxf cross-compiler-mipsel.tar.bz2
+tar -jxf cross-compiler-powerpc.tar.bz2
+tar -jxf cross-compiler-sh4.tar.bz2
+tar -jxf cross-compiler-sparc.tar.bz2
+tar -jxf cross-compiler-armv4l.tar.bz2
+tar -jxf cross-compiler-armv5l.tar.bz2
+tar -jxf cross-compiler-armv6l.tar.bz2
+tar -jxf cross-compiler-armv7l.tar.bz2
+```
+
+Xoá hết tệp thừa cho đep:
+```bash
 rm -rf *.tar.bz2
+```
+
+Đổi tên cho dễ nhìn và bớt dài dòng nào:
+
+```bash
 mv cross-compiler-i586 i586
 mv cross-compiler-m68k m68k
 mv cross-compiler-mips mips
