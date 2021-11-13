@@ -18,6 +18,12 @@ yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev
 sudo rm -rf /usr/local/go /var/www/html/* /etc/xcompile /usr/lib64/libgmp.so.10
 ```
 
+### Cách cài MySQL trên CentOS 7
+
+```bash
+
+```
+
 Sau đó cài đặt ngôn ngữ Golang:
 
 ```bash
