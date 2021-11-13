@@ -33,7 +33,7 @@ sha256sum go1.13.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 source ~/.bash_profile
-rm -rf go1.10.3.linux-amd64.tar.gz
+rm -rf go1.13.linux-amd64.tar.gz
 ```
 
 Tiếp theo chúng ta sẽ tải Cross Compiler nhé :>
