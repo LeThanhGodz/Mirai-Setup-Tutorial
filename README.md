@@ -94,3 +94,8 @@ mv cross-compiler-armv6l armv6l
 mv cross-compiler-armv7l armv7l
 ```
 
+Cài các thư viện cho Golang:
+```bash
+go get github.com/go-sql-driver/mysql
+go get github.com/mattn/go-shellwords
+```
