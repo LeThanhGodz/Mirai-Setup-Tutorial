@@ -1,6 +1,14 @@
 
 # MIRAI SETUP FULL TUTORIAL
 
+#### Nếu các bạn đã cài Mirai trước đó rồi thì hãy dọn dẹp tàn dư từ nó trước nhé, bằng cách dùng lệnh này:
+
+```bash
+sudo rm -rf /usr/local/go /var/www/html/* /etc/xcompile /usr/lib64/libgmp.so.10
+rpm -qa | grep mysql
+# Xoá hết tất cả các phiên bản MySQL
+```
+
 Đầu tiên, các bạn cần phải tải về các package cần thiết bằng cách gõ vào Terminal các lệnh sau:
 
 ```bash
@@ -10,14 +18,6 @@ yum groupinstall "Development Tools" -y
 yum install gmp-devel -y
 ln -s /usr/lib64/libgmp.so.3 /usr/lib64/libgmp.so.10
 yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql-client mysql-server gcc glibc-static -y
-```
-
-#### Nếu các bạn đã cài Mirai trước đó rồi thì hãy dọn dẹp tàn dư từ nó trước nhé, bằng cách dùng lệnh này:
-
-```bash
-sudo rm -rf /usr/local/go /var/www/html/* /etc/xcompile /usr/lib64/libgmp.so.10
-rpm -qa | grep mysql
-# Xoá hết tất cả các phiên bản MySQL
 ```
 
 ### Cách cài MySQL trên CentOS 7
