@@ -6,7 +6,7 @@
 ```bash
 sudo rm -rf /usr/local/go /var/www/html/* /etc/xcompile /usr/lib64/libgmp.so.10
 rpm -qa | grep mysql
-# Xoá hết tất cả các phiên bản MySQL
+# Xoá hết tất cả các phiên bản MySQL hiện trên màn hình
 ```
 
 Đầu tiên, các bạn cần phải tải về các package cần thiết bằng cách gõ vào Terminal các lệnh sau:
