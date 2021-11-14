@@ -16,12 +16,18 @@ yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev
 
 ```bash
 sudo rm -rf /usr/local/go /var/www/html/* /etc/xcompile /usr/lib64/libgmp.so.10
+rpm -qa | grep mysql
+# Xoá hết tất cả các phiên bản MySQL
 ```
 
 ### Cách cài MySQL trên CentOS 7
 
 ```bash
-
+wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+yum -y install mysql-community-release-el7-5.noarch.rpm
+yum -y install mysql-server
+systemctl start mysqld
+systemctl enable mysqld
 ```
 
 Sau đó cài đặt ngôn ngữ Golang:
