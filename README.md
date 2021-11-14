@@ -30,7 +30,7 @@ systemctl start mysqld
 systemctl enable mysqld
 ```
 
-Sau đó cài đặt ngôn ngữ Golang:
+Sau đó cài đặt ngôn ngữ Golang (Vì Golang 1.9 trong tài liệu hướng dẫn không dùng được driver MySQL của Golang nên mình cài Go 1.13 nhé):
 
 ```bash
 rm -rf /usr/local/go 
